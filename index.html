@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Basil — a modern, friendly BASIC with real-world superpowers. Compile locally or in the cloud.">
+    <meta property="og:title" content="Basil🌿 Programming Language">
+    <meta property="og:description" content="A cozy BASIC with modern superpowers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://picsum.photos/1200/630?blur=1">
+    <link rel="icon" href="/favicon.png">
+    <title>Basil🌿 Programming Language</title>
+    <link rel="stylesheet" href="assets/reference.css">
+    <meta name="color-scheme" content="light">
+    <style>
+        /* Minimal critical styles in case CSS fails to load */
+        .no-js {
+            padding: 10px;
+            background: #fff3cd;
+            color: #6b5a00;
+        }
+
+        .top nav a[aria-current="page"] {
+            background: var(--acc);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header class="top">
+    <div class="wrap"
+         style="display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.8rem 1rem">
+        <h1 onclick="location='/home.html'" style="font-weight:700;letter-spacing:.2px">Basil🌿</h1>
+        <nav aria-label="Primary">
+            <ul style="list-style:none;display:flex;gap:.9rem;margin:0;padding:0">
+                <li><a href="/download.html" class="btn secondary" style="padding:.45rem .7rem">🌱 Download</a>
+                </li>
+                <li><a href="https://blackrushbasic.com" target = "_blank" class="btn secondary" style="padding:.45rem .7rem">🌱 Docs</a></li>
+                <li><a href="https://uibasic.com/" class="btn secondary" style="padding:.45rem .7rem">🌱 Web
+                    Version</a></li>
+                <li><a href="/about.html" class="btn secondary" style="padding:.45rem .7rem">🌱 About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="wrap" style="background-color: #f60;color:#000;padding:0.5rem;text-align:center">
+    <h2><a href="/download.html" class="btn secondary" style="padding:.45rem .7rem">Install Basil🌿 1.0 Release Now!</a></h2>
+</section>
+
+<!-- Hero -->
+<section class="hero"
+         style="position:relative;min-height:56vh;display:flex;align-items:center;justify-content:center;background:#0f172a;">
+    <div id="hero" aria-hidden="true" style="
+      position:absolute;inset:0;
+      background-image:
+        radial-gradient(1200px 600px at 10% 10%, rgba(40,103,198,.45), transparent 50%),
+        radial-gradient(900px 450px at 90% 20%, rgba(255,255,255,.06), transparent 60%),
+        url('/starshipbasilica_1.jpg');
+      background-size:cover;
+      background-position:center;
+      filter:contrast(105%) brightness(85%);"></div>
+
+    <div class="wrap"
+         style="background-color:#000; opacity: 0.6;position:relative;text-align:center;color:#fff;max-width:980px;padding:2rem 1rem">
+        <h2 style="font-size:clamp(1.8rem,4vw,3rem);margin:0 0 .5rem 0;line-height:1.15;">
+            Build with <span style="white-space:nowrap">Basil🌿</span>
+        </h2>
+        <p id="tagline" class="greet" style="margin:.5rem auto 1.2rem auto;max-width:60ch;x-opacity:.95">
+            Fast, friendly, modern BASIC ready for the real world.
+        </p>
+        <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
+            <!--            <a class="btn" href="compile.basil">Try the Web Compiler</a>-->
+            <!--            <a class="btn secondary" href="docs.basil">Read the Docs</a>-->
+        </div>
+    </div>
+</section>
+<section class="wrap" style="background-color: #f60;color:#000;padding:1rem">
+    <h2 style="margin:.5rem 0 0 0">Basil🌿 1.0 is Here! <small>(Available now on
+        <a href="https://github.com/blackrushllc">Github</a> or <a href="/download.html" class="btn secondary" style="padding:.45rem .7rem">Download</a>)</small></h2>
+    <p class="intro">
+        The Basil🌿 1.0 release is ready, bringing a host of exciting features and improvements to
+        enhance your programming experience.
+        Stay tuned for updates and get ready to explore the full potential of Basil🌿!
+    </p>
+    <!-- Create 3 columns here for feature list -->
+    <div class="grid"
+         style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem">
+        <div class="card">
+            <h3 style="margin-top:0">🌱Quick Access</h3>
+            <p>Install with APT, DNF, HomeBrew, WinGet or visit the <a
+                    href="/download.html">Download page</a></p>
+            <p>Run Basil programs from the command line or compile to a single native executable for Windows, Linux or
+                MacOS.</p>
+            <p>Develop Php-style template pages with Basil🌿 HTTP</p>
+        </div>
+        <div class="card">
+            <h3 style="margin-top:0">🌱Standard Library Modules</h3>
+            <p>Access a wide range of built-in functionalities for AI, Audio, MIDI, AWS
+                (s3, ses, sqs, etc), CSV, CURL, JSON, SQL, Zip, Base64, PGP (encryption), REST, SFTP, Mail,
+                HTML templating, ORM and more</p>
+            <p>Python-like Types, Lists, Dictionaries, Structs, Classes, and a flexible BASIC-Like or C-Like syntax.</p>
+        </div>
+        <div class="card">
+            <h3 style="margin-top:0">🌱Improved AI Integration</h3>
+            <p>Leverage advanced AI capabilities with enhanced tools for code generation and module building.</p>
+        </div>
+        <div class="card">
+            <h3 style="margin-top:0">🌱A Language for Learners</h3>
+            <p>Start learning right now with our <a href="https://uibasic.com/">Web Version</a> and Fast
+                Interactive
+                Tutorials</p>
+        </div>
+    </div>
+</section>
+
+<!-- Section group 1 -->
+<section class="wrap" style="padding:2rem 1rem 0 1rem">
+    <h2 style="margin:.5rem 0 0 0">Introducing Basil: A Modern BASIC Compiler</h2>
+    <p class="intro">
+        Basil🌿 is deliberately small, friendly, and all about helping new programmers start building strong fundamentals
+        from day 1. It combines the approachability of classic BASIC with an optional, modern brace style that looks
+        comfortable to students headed toward C/C++, C#, Java, Javascript, or Go.
+    </p>
+
+
+    <div class="grid"
+         style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem">
+        <article class="card">
+            <h3 style="margin-top:0">Fast Bytecode, Faster Compilation</h3>
+            <p>Basil is a powerful interpreter and native code compiler for Windows, Linux and Mac/OS, with a mix of
+                syntax
+                styles from “Beginner BASIC” to a C-like “Basil#” that can evolve with the learner.</p>
+            <p>
+                Basil is also designed for today’s real-world solutions with built-in libraries for AI, Encrytion,
+                Networking,
+                Amazon Web Services, SQL, and a whole lot more.
+            </p>
+
+            <img src="/screenshot1.png" alt="Placeholder chart"
+                 style="width:100%;border-radius:.35rem;margin-top:.5rem">
+
+
+            <p>
+                Basil is free and open-source, written in Rust, and can be easily extended using built-in AI onboarding
+                tools
+                included in the project repository.
+            </p>
+
+            <h4>Basil🌿 is a cross-platform Interpreter and Native-Code Compiler</h4>
+
+            <p>
+                Basil🌿 is the first high-level interpreted and compiled language designed with AI
+                in mind, from code generation, module building, and even adding features or fixing bugs in itself!
+                Basil is easier to learn and use, and much faster than Python or PHP.
+            </p>
+
+            <p>
+                Basil🌿 is a fantastic ‘First Programming
+                Language’, but powerful enough to be used for anything.
+            </p>
+
+            <p>Learning Basil🌿 will give you
+                real-world computer programming fundamentals that will set you on a path to becoming a software
+                engineer proficient in any computer programming language.
+            </p>
+
+            <p>Basil🌿 is a cross-platform interpreter and native-code compiler. It runs on Windows, Linux, and
+                macOS.</p>
+            <p>Basil🌿 can run source files, or compile to a single portable executable that runs without installing a
+                runtime or dependencies.</p>
+
+
+        </article>
+        <article class="card">
+            <h3 style="margin-top:0">Read the Basil Articles</h3>
+            <p>
+                <a target="_blank"
+                   href="https://medium.com/@blackrushdrive-the-basil-programming-language-is-521125edda60">
+                    Basil🌿 The Basil Programming Language is..
+                </a>
+            </p>
+            <p>
+                <a target="_blank"
+                   href="https://medium.com/@blackrushdrive/the-ok-prompt-basils-old-school-1980s-cli-totally-tubular-user-guide-48f350b0fbae">
+                    The OK Prompt — Basil’s Old‑School 1980's CLI (Totally Tubular User Guide)
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://medium.com/@blackrushdrive/how-to-set-up-ai-in-basil-1409aa7aa09b">
+                    How to Set Up AI in Basil🌿
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://medium.com/@blackrushdrive/how-to-use-zip-in-basil-073b13491e36">
+                    How to use ZIP in Basil🌿
+                </a>
+            </p>
+
+            <h3>Get the Source Code</h3>
+            <p>
+                <a target="_blank" href="https://github.com/blackrushllc">
+                    Basil🌿Github Repository
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://uibasic.com/reference.html">
+                    Complete Online Reference
+                </a>
+
+            </p>
+            <h3>Related Projects from Blackrush</h3>
+            <p>
+                <a target="_blank" href="https://github.com/blackrushllc/basic">
+                    Basic Github Repository (a BASIC-only subset of Basil)
+                </a>
+                <br>
+                <a target="_blank" href="https://github.com/blackrushllc/yobasic">
+                    UI-Basic Github Repository (A Javascript-based BASIC learning tool)
+                </a>
+                <br>
+                <a target="_blank" href="https://github.com/blackrushllc/dawg">
+                    DAWG - A Command Line MIDI DAW
+                </a>
+                <br>
+                <a target="_blank" href="https://github.com/blackrushllc/yore">
+                    Yore - A Php Web Framework (to be ported to Basil!)
+                </a>
+                <br>
+                <a target="_blank" href="https://github.com/blackrushllc/brb">
+                    The Blackrush BASIC website (docs and binaries)
+                </a>
+            </p>
+
+            <h3>Resources for Education</h3>
+            <p>
+                <a target="_blank" href="https://uibasic.com/">
+                    UI-BASIC IDE - Learning to code in any language
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://uibasic.com/desktop.html">
+                    UI-BASIC Desktop - Learning to create apps in any language
+                </a>
+            </p>
+            <p>
+                <a target="_blank" href="https://blackrushbasic.com">
+                    Basil/Basic/Basic.JS Rerference and guide
+                </a></p>
+            <p>
+                <a target="_blank" href="/website Programming Language for Education.pdf">
+                    The Basil Programming Language for Education
+                </a></p>
+            <p>
+                <a target="_blank" href="/website_in_a_nutshell.pdf">
+                    How the Basil BASIC Interpreter Works
+                </a></p>
+            <p>
+                <a target="_blank" href="/docs/educational/presentation.pdf">
+                    15‑Minute Stand‑Up Demo Notes for Teachers
+                </a></p>
+            <p>
+                <a target="_blank"
+                   href="https://github.com/blackrushllc/blob/development/docs/guides/SETUP_AI.md">
+                    Basil AI Quickstart
+                </a></p>
+            <p>
+                <a target="_blank"
+                   href="https://github.com/blackrushllc/blob/development/docs/guides/TECHNICAL.md">
+                    Basil Technical Architecture and Execution Model
+                </a></p>
+            <p>
+                <a target="_blank"
+                   href="https://github.com/blackrushllc/blob/development/docs/guides_KEYWORDS_BY_CATEGORY.md">
+                    Basil Keywords by Category
+                </a></p>
+            <p>
+                <a target="_blank" href="https://github.com/blackrushllc/tree/development/docs/guides">
+                    All Current Basil Guide Documents
+                </a></p>
+
+            <hr>
+            <h4>A suggested path for an intro course (e.g., COP‑1000)</h4>
+            <ol>
+                <li>🌱 Week 1–2: Variables, arithmetic, print/println, simple if/then.</li>
+                <li>🌱 Week 3: Loops (while, for/next), break and continue.</li>
+                <li>🌱 Week 4: Functions (func, return), parameters, local scope.</li>
+                <li>🌱 Week 5: Decisions at scale: select case; string operations.</li>
+                <li>🌱 Week 6: Modernization—introduce the brace style in parallel; show side‑by‑side translations.</li>
+                <li>🌱 Week 7+: Objects and modules as applicable; project work.</li>
+            </ol>
+
+            <p>Students leave with working mental models and syntax that looks familiar across the industry.</p>
+        </article>
+    </div>
+</section>
+
+<!-- Section group 2 -->
+<section class="wrap" style="padding:2rem 1rem 0 1rem">
+    <h2 style="margin:.5rem 0 0 0">The Basil Programming Language for Education</h2>
+    <p class="intro">
+        Basil🌿 is deliberately small, friendly, and all about helping new programmers start building strong fundamentals
+        from day 1. It combines the approachability of classic BASIC with an optional, modern brace style that looks
+        comfortable to students headed toward C/C++, C#, Java, Javascript, or Go.
+    </p>
+    <p>
+        The goal isn’t to replace those languages; it’s to meet beginners where they are, teach core concepts clearly,
+        and give them a smooth runway to the rest of the ecosystem.
+    </p>
+
+    <div class="grid"
+         style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem">
+        <article class="card">
+
+
+            <h3 style="margin-top:0">Why first languages matter</h3>
+
+            <p>Your first programming language shouldn’t be a puzzle box. It should:</p>
+            <hr>
+            <p>
+
+            <ul class="thing">
+                <li class="thing">🌱 Lower cognitive load while you’re learning core ideas like variables, expressions,
+                    control flow,
+                    and functions.
+                </li>
+                <li class="thing">🌱 Offer clear, immediate feedback (short edit–run cycles, gentle error messages).</li>
+                <li class="thing">🌱 Be consistent in how it uses syntax to express ideas.</li>
+                <li class="thing">🌱 Build habits that transfer to the broader programming world.</li>
+                <li class="thing">🌱 Provide a practical real world experience with an immediately applicable skill
+                    set.
+                </li>
+            </ul>
+            <hr>
+
+            <p>Basil🌿 was designed against these criteria. It keeps the classic readability of BASIC, but adds an
+                alternate “modern” surface syntax so that what you learn today still looks familiar later.</p>
+
+
+            <!-- TODO -->
+            <div style="padding:32px;text-align:justify; background-color: #f5f5f5; border-radius: .35rem;">
+                <p>🌱 Basil is the first high level interpreted and compiled language designed with AI in mind, from code
+                    generation, module building, and even adding features or fixing bugs in itself!
+                </p>
+                <p>
+                    🌱 Basil programs can be compiled to native binaries for Windows, Linux, and MacOS. Basil can also
+                    run as a CGI script templating engine using <?basil .. ?> tags like Php.
+                </p>
+                <p>
+                    🌱 Basil is easier learn and to use, and much faster than Python or Php.
+                </p>
+                <p>
+                    🌱 Basil has all of the simplicity of old BASIC, but with all of the features of modern languages
+                    like Python or Go, plus the power of AI.
+                </p>
+                <p>
+                    🌱 Basil is a fantastic "First Programming Language", but powerful enough to be used for anything.
+                </p>
+                <p>
+                    🌱 Basil includes lots of sample programs including a complete Website Framework and MIDI DAW
+                    application.
+                </p>
+                <p>
+                    🌱 Basil puts the power of AI in the hands of the student, hobbyist, and professional programmer.
+                </p>
+                <p>
+                    🌱 Basil includes Built-in support ("Mods") for AI, Audio, MIDI, AWS (s3, ses, sqs, etc), CSV, CURL,
+                    JSON, SQL, Zip, Base64, PGP (encryption), REST, SFTP, SMTP and more
+                </p>
+                <p>
+                    🌱 Basil includes the ability to have your favorite AI train itself on how to make Basil Library
+                    Objects ("Mods") and write Basil code.
+                </p>
+                <p>
+                    🌱 Basil has a built-in ORM (Object Relational Mapping) for SQL databases.
+                </p>
+                <p>
+                    🌱 Basil has a Rad 1980's GWBASIC interface if you want to use that. You can even instantiate Classes
+                    for manual testing, enter a program (with line numbers!) and run it, save it, load it, list it, and
+                    more. Cowabunga!
+                </p>
+                <p>
+                    🌱 Basil has LOTS of documentation, examples, and a lot of old school and new school fun.
+                </p>
+                <p>
+                    🌱 Basil is inspired by Bob Zale's PowerBASIC and the warmth and simplicity of BASIC, but reimagined
+                    for today's developer needs with modern features, a robust standard library, and seamless
+                    interoperability with C and WebAssembly (WASI).
+                </p>
+                <p>
+                    🌱 Basil is written in Rust for safety and performance, and aims to provide a delightful developer
+                    experience.
+                </p>
+                <p>
+                    🌱 Basil is open source under the MIT or Apache-2.0 license.
+                </p>
+                <p>
+                    🌱 Basil is a project by Blackrush LLC, Tarpon Springs, Florida, and written by Erik Olson.
+                </p>
+            </div>
+
+
+            <!--            <img src="https://picsum.photos/seed3/400/240" alt="Placeholder notebook"-->
+            <!--                 style="width:100%;border-radius:.35rem;margin-top:.5rem">-->
+            <p>Basil🌿 is powerful enough to build real projects, with a growing standard library and a
+                modular “mod” system that to adds out-of-box functionality like AI, AWS, SQL databases, HTTP, SMTP,
+                JSON, CSV, cryptography, audio/MIDI/DAW support, and more.</p>
+
+
+        </article>
+        <article class="card">
+            <h3 style="margin-top:0">Classroom-Friendly</h3>
+            <p>Learn with our UI-BASIC IDE and Desktop Simulator
+            </p>
+            <p>Watch: Kala introduces you to Learning to Code with UI-BASIC</p>
+            <video controls playsinline style="width:100%;height:auto;border-radius:.35rem;">
+                <source src="https://uibasic.com/html/KALA1a.mp4" type="video/mp4">
+            </video>
+
+            <p>Learn to code in any language with our UI-BASIC Web IDE</p>
+            <p>Watch: Skye gives you a tour of the UI-BASIC Learning System</p>
+            <video controls playsinline style="width:100%;height:auto;border-radius:.35rem;">
+                <source src="https://uibasic.com/html/SKYE1a.mp4" type="video/mp4">
+            </video>
+
+        </article>
+    </div>
+
+</section>
+<!--
+
+
+
+-->
+<!-- Section group 3 -->
+<section class="wrap" style="padding:2rem 1rem 1.5rem 1rem">
+    <h2 style="margin:.5rem 0 0 0">Two ways to say the same thing - both syntaxes valid in Basil🌿</h2>
+    <p class="intro">
+        Below are two equivalent ways to write an infinite loop with a break condition in Basil🌿:
+    </p>
+
+    <div class="grid"
+         style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem">
+        <article class="card">
+            <h3 style="margin-top:0">Classic BASIC Syntax</h3>
+            <pre>
+
+    REM Infinite loop with BREAK (will break at 3)
+    LET i = 0
+    WHILE TRUE BEGIN
+        INCR i
+        IF i = 3 THEN BEGIN       REM Block IF
+            BREAK
+        END
+        PRINT i
+    END
+
+</pre>
+
+        </article>
+        <article class="card">
+            <h3 style="margin-top:0">Modern C-style Syntax</h3>
+            <pre>
+
+    // Infinite loop with BREAK (will break at 3)
+    let i = 0;
+    while true {
+        i++;
+        if i == 3 {          // Block IF
+            break;
+        }
+        print i;
+    }
+
+</pre>
+
+        </article>
+    </div>
+</section>
+
+<a id="iobasic"></a>
+<section class="wrap" style="padding:3rem 1rem; border-top: 1px solid rgba(255,255,255,0.1); background: #0f172a; color: #f8fafc;">
+    <div style="text-align:center; margin-bottom:2.5rem;">
+        <h2 style="font-size:clamp(1.5rem,3vw,2.2rem); color:#60a5fa; margin-bottom:0.5rem;">IOBASIC: Built-in Power for the Real World</h2>
+        <p style="max-width:800px; margin:0 auto; opacity:0.85; line-height:1.6;">
+            Basil isn't just for loops and math. It's a professional-grade toolbelt for modern engineering. 
+            We've integrated the industry's most critical protocols and services directly into the standard library, 
+            so students learn career-ready skills and engineers ship production code on day one.
+        </p>
+    </div>
+
+    <!-- Syntax Toggle -->
+    <div style="display:flex; justify-content:center; gap:0.5rem; margin-bottom:2.5rem;">
+        <button id="btn-classic" onclick="setSyntax('classic')" style="background:rgba(96,165,250,0.1); border:1px solid rgba(96,165,250,0.3); color:#60a5fa; padding:0.5rem 1rem; border-radius:4px; cursor:pointer; font-size:0.85rem; transition:all 0.2s; outline:none;">Classic BASIC Syntax</button>
+        <button id="btn-modern" onclick="setSyntax('modern')" style="background:transparent; border:1px solid rgba(255,255,255,0.1); color:rgba(255,255,255,0.5); padding:0.5rem 1rem; border-radius:4px; cursor:pointer; font-size:0.85rem; transition:all 0.2s; outline:none;">Modern C-style Syntax</button>
+    </div>
+
+    <div class="grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+        <!-- Cloud & Infrastructure -->
+        <div style="background:rgba(255,255,255,0.03); padding:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.1);">
+            <h3 style="color:#fbbf24; margin-top:0;">☁️ Cloud & Infrastructure</h3>
+            <p style="font-size:0.95rem; margin-bottom:1rem;">Native integration with <strong>Amazon AWS</strong> (S3, SES, SQS). Handle storage, messaging, and email without external dependencies.</p>
+            <ul style="font-size:0.85rem; padding-left:1.2rem; opacity:0.8;">
+                <li><strong>AWS S3:</strong> Direct bucket uploads and signed URLs.</li>
+                <li><strong>AWS SES/SQS:</strong> Scalable mailing and queue systems.</li>
+                <li><strong>Base64 & PGP:</strong> Built-in crypto and encoding.</li>
+            </ul>
+        </div>
+
+        <!-- Cloud Code Snippet -->
+        <div style="grid-column: span 2; background:rgba(0,0,0,0.4); padding:1.2rem; border-radius:8px; border:1px solid rgba(96,165,250,0.2); font-family:monospace; font-size:0.85rem; max-height:280px; overflow-y:auto; scrollbar-width:thin;">
+            <pre class="code-classic" style="margin:0; color:#cbd5e1; line-height:1.4;"><span style="color:#60a5fa;">DIM</span> aws@ <span style="color:#60a5fa;">AS</span> <span style="color:#34d399;">AWS</span>()
+<span style="color:#60a5fa;">DIM</span> s3@ = aws@.MakeS3()
+<span style="color:#60a5fa;">DIM</span> pgp@ <span style="color:#60a5fa;">AS</span> <span style="color:#34d399;">CRYPTO_PGP</span>()
+
+<span style="color:#60a5fa;">TRY</span>
+    <span style="color:#64748b;">// Securely download and decrypt report</span>
+    s3@.GetToFile(<span style="color:#fbbf24;">"vault"</span>, <span style="color:#fbbf24;">"secret.pgp"</span>, <span style="color:#fbbf24;">"temp.pgp"</span>)
+    pgp@.DecryptFile$(READFILE$(<span style="color:#fbbf24;">"key.asc"</span>), <span style="color:#fbbf24;">"pass"</span>, <span style="color:#fbbf24;">"temp.pgp"</span>, <span style="color:#fbbf24;">"data.csv"</span>)
+    <span style="color:#60a5fa;">PRINTLN</span> <span style="color:#fbbf24;">"Retrieved daily report: data.csv"</span>
+<span style="color:#60a5fa;">CATCH</span> err$
+    <span style="color:#60a5fa;">PRINTLN</span> <span style="color:#fbbf24;">"S3/PGP Error: "</span>, err$
+<span style="color:#60a5fa;">END TRY</span></pre>
+            <pre class="code-modern" style="margin:0; color:#cbd5e1; line-height:1.4; display:none;"><span style="color:#60a5fa;">dim</span> aws@ <span style="color:#60a5fa;">as</span> <span style="color:#34d399;">aws</span>()
+<span style="color:#60a5fa;">dim</span> s3@ = aws@.makes3()
+<span style="color:#60a5fa;">dim</span> pgp@ <span style="color:#60a5fa;">as</span> <span style="color:#34d399;">crypto_pgp</span>()
+
+<span style="color:#60a5fa;">try</span> {
+    <span style="color:#64748b;">// securely download and decrypt report</span>
+    s3@.gettofile(<span style="color:#fbbf24;">"vault"</span>, <span style="color:#fbbf24;">"secret.pgp"</span>, <span style="color:#fbbf24;">"temp.pgp"</span>)
+    pgp@.decryptfile$(readfile$(<span style="color:#fbbf24;">"key.asc"</span>), <span style="color:#fbbf24;">"pass"</span>, <span style="color:#fbbf24;">"temp.pgp"</span>, <span style="color:#fbbf24;">"data.csv"</span>)
+    <span style="color:#60a5fa;">println</span> <span style="color:#fbbf24;">"retrieved daily report: data.csv"</span>
+} <span style="color:#60a5fa;">catch</span> err$ {
+    <span style="color:#60a5fa;">println</span> <span style="color:#fbbf24;">"s3/pgp error: "</span>, err$
+}</pre>
+        </div>
+
+        <!-- Database & ORM -->
+        <div style="background:rgba(255,255,255,0.03); padding:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.1);">
+            <h3 style="color:#34d399; margin-top:0;">🗄️ Database & Persistence</h3>
+            <p style="font-size:0.95rem; margin-bottom:1rem;">Real-world apps need data. Basil ships with high-performance <strong>MySQL</strong> and <strong>PostgreSQL</strong> drivers and a lightweight <strong>ORM</strong>.</p>
+            <ul style="font-size:0.85rem; padding-left:1.2rem; opacity:0.8;">
+                <li><strong>Pooled Connections:</strong> Built for high-concurrency apps.</li>
+                <li><strong>Parameterized SQL:</strong> Teaching security-first coding.</li>
+                <li><strong>JSON & Dicts:</strong> Native support for modern data formats.</li>
+            </ul>
+        </div>
+
+        <!-- Database Code Snippet -->
+        <div style="grid-column: span 2; background:rgba(0,0,0,0.4); padding:1.2rem; border-radius:8px; border:1px solid rgba(52,211,153,0.2); font-family:monospace; font-size:0.85rem; max-height:280px; overflow-y:auto; scrollbar-width:thin;">
+            <pre class="code-classic" style="margin:0; color:#cbd5e1; line-height:1.4;"><span style="color:#60a5fa;">DIM</span> db@ <span style="color:#60a5fa;">AS</span> <span style="color:#34d399;">DB_MYSQL</span>(<span style="color:#fbbf24;">"mysql://user:pass@localhost/db"</span>)
+<span style="color:#60a5fa;">DIM</span> rows@ = JSON_DECODE@(CSV_PARSE$(READFILE$(<span style="color:#fbbf24;">"data.csv"</span>)))
+
+<span style="color:#60a5fa;">TRY</span>
+    db@.Begin()
+    <span style="color:#60a5fa;">FOR EACH</span> r@ <span style="color:#60a5fa;">IN</span> rows@
+        <span style="color:#64748b;">// Encode metadata field to JSON string</span>
+        <span style="color:#60a5fa;">LET</span> meta$ = JSON_STRINGIFY$(r@[<span style="color:#fbbf24;">"tags"</span>])
+        db@.Execute(<span style="color:#fbbf24;">"INSERT INTO logs (val, meta) VALUES (?, ?)"</span>, 
+                    [r@[<span style="color:#fbbf24;">"val"</span>], meta$])
+    <span style="color:#60a5fa;">NEXT</span>
+    db@.Commit()
+    <span style="color:#60a5fa;">PRINTLN</span> <span style="color:#fbbf24;">"Ingested #{LEN(rows@)} records."</span>
+<span style="color:#60a5fa;">CATCH</span> e$
+    db@.Rollback()
+    <span style="color:#60a5fa;">PRINTLN</span> <span style="color:#fbbf24;">"DB Error: "</span>, e$
+<span style="color:#60a5fa;">END TRY</span></pre>
+            <pre class="code-modern" style="margin:0; color:#cbd5e1; line-height:1.4; display:none;"><span style="color:#60a5fa;">dim</span> db@ <span style="color:#60a5fa;">as</span> <span style="color:#34d399;">db_mysql</span>(<span style="color:#fbbf24;">"mysql://user:pass@localhost/db"</span>)
+<span style="color:#60a5fa;">dim</span> rows@ = json_decode@(csv_parse$(readfile$(<span style="color:#fbbf24;">"data.csv"</span>)))
+
+<span style="color:#60a5fa;">try</span> {
+    db@.begin()
+    <span style="color:#60a5fa;">for each</span> r@ <span style="color:#60a5fa;">in</span> rows@ {
+        <span style="color:#64748b;">// encode metadata field to json string</span>
+        <span style="color:#60a5fa;">let</span> meta$ = json_stringify$(r@[<span style="color:#fbbf24;">"tags"</span>])
+        db@.execute(<span style="color:#fbbf24;">"insert into logs (val, meta) values (?, ?)"</span>, 
+                    [r@[<span style="color:#fbbf24;">"val"</span>], meta$])
+    }
+    db@.commit()
+    <span style="color:#60a5fa;">println</span> <span style="color:#fbbf24;">"ingested #{len(rows@)} records."</span>
+} <span style="color:#60a5fa;">catch</span> e$ {
+    db@.rollback()
+    <span style="color:#60a5fa;">println</span> <span style="color:#fbbf24;">"db error: "</span>, e$
+}</pre>
+        </div>
+
+        <!-- Networking -->
+        <div style="background:rgba(255,255,255,0.03); padding:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.1);">
+            <h3 style="color:#f87171; margin-top:0;">🌐 Network & Transfer</h3>
+            <p style="font-size:0.95rem; margin-bottom:1rem;">From automated backups to IoT, Basil's networking suite handles the heavy lifting of data movement.</p>
+            <ul style="font-size:0.85rem; padding-left:1.2rem; opacity:0.8;">
+                <li><strong>NET_SFTP:</strong> Secure file transfers over SSH.</li>
+                <li><strong>MAIL_SMTP:</strong> Send email via STARTTLS/TLS providers.</li>
+                <li><strong>CURL/HTTP:</strong> REST API consumption made easy.</li>
+            </ul>
+        </div>
+
+        <!-- Networking Code Snippet -->
+        <div style="grid-column: span 2; background:rgba(0,0,0,0.4); padding:1.2rem; border-radius:8px; border:1px solid rgba(248,113,113,0.2); font-family:monospace; font-size:0.85rem; max-height:280px; overflow-y:auto; scrollbar-width:thin;">
+            <pre class="code-classic" style="margin:0; color:#cbd5e1; line-height:1.4;"><span style="color:#60a5fa;">DIM</span> smtp@ <span style="color:#60a5fa;">AS</span> <span style="color:#34d399;">MAIL_SMTP</span>(<span style="color:#fbbf24;">"smtp.basil.com"</span>, <span style="color:#fbbf24;">"bot@basil.com"</span>, <span style="color:#fbbf24;">"pass"</span>, <span style="color:#818cf8;">587</span>)
+<span style="color:#60a5fa;">LET</span> msg$ = <span style="color:#fbbf24;">"Find your stats attached below."</span>
+
+<span style="color:#60a5fa;">TRY</span>
+    <span style="color:#64748b;">// Create and send MIME email with attachment</span>
+    <span style="color:#60a5fa;">LET</span> mime$ = smtp@.MakeMime$(<span style="color:#fbbf24;">"bot@basil.com"</span>, <span style="color:#fbbf24;">"ceo@corp.com"</span>, 
+                                 <span style="color:#fbbf24;">"Daily Stats"</span>, msg$, <span style="color:#fbbf24;">""</span>, <span style="color:#fbbf24;">"data.csv"</span>)
+    smtp@.SendRaw$(mime$)
+    <span style="color:#60a5fa;">PRINTLN</span> <span style="color:#fbbf24;">"Report delivered successfully."</span>
+<span style="color:#60a5fa;">CATCH</span> e$
+    <span style="color:#60a5fa;">PRINTLN</span> <span style="color:#fbbf24;">"SMTP error: "</span>, e$
+<span style="color:#60a5fa;">END TRY</span></pre>
+            <pre class="code-modern" style="margin:0; color:#cbd5e1; line-height:1.4; display:none;"><span style="color:#60a5fa;">dim</span> smtp@ <span style="color:#60a5fa;">as</span> <span style="color:#34d399;">mail_smtp</span>(<span style="color:#fbbf24;">"smtp.basil.com"</span>, <span style="color:#fbbf24;">"bot@basil.com"</span>, <span style="color:#fbbf24;">"pass"</span>, <span style="color:#818cf8;">587</span>)
+<span style="color:#60a5fa;">let</span> msg$ = <span style="color:#fbbf24;">"find your stats attached below."</span>
+
+<span style="color:#60a5fa;">try</span> {
+    <span style="color:#64748b;">// create and send mime email with attachment</span>
+    <span style="color:#60a5fa;">let</span> mime$ = smtp@.makemime$(<span style="color:#fbbf24;">"bot@basil.com"</span>, <span style="color:#fbbf24;">"ceo@corp.com"</span>, 
+                                 <span style="color:#fbbf24;">"daily stats"</span>, msg$, <span style="color:#fbbf24;">""</span>, <span style="color:#fbbf24;">"data.csv"</span>)
+    smtp@.sendraw$(mime$)
+    <span style="color:#60a5fa;">println</span> <span style="color:#fbbf24;">"report delivered successfully."</span>
+} <span style="color:#60a5fa;">catch</span> e$ {
+    <span style="color:#60a5fa;">println</span> <span style="color:#fbbf24;">"smtp error: "</span>, e$
+}</pre>
+        </div>
+
+        <!-- Web & Systems -->
+        <div style="background:rgba(255,255,255,0.03); padding:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.1);">
+            <h3 style="color:#818cf8; margin-top:0;">🚀 Web & Systems</h3>
+            <p style="font-size:0.95rem; margin-bottom:1rem;">Deploy fast. Basil includes a dev-ready <strong>Web Server (Axum)</strong> and the <strong>Yore</strong> kernel for multi-tenant web apps.</p>
+            <ul style="font-size:0.85rem; padding-left:1.2rem; opacity:0.8;">
+                <li><strong>HTML Templating:</strong> PHP-style inline <code>&lt;?basil ?&gt;</code> blocks.</li>
+                <li><strong>MIDI & Audio:</strong> Low-level control for creative coding.</li>
+                <li><strong>Terminal UI:</strong> Professional-grade CLI tool building.</li>
+            </ul>
+        </div>
+
+        <!-- Web Code Snippet -->
+        <div style="grid-column: span 2; background:rgba(0,0,0,0.4); padding:1.2rem; border-radius:8px; border:1px solid rgba(129,140,248,0.2); font-family:monospace; font-size:0.85rem; max-height:280px; overflow-y:auto; scrollbar-width:thin;">
+            <pre class="code-classic" style="margin:0; color:#cbd5e1; line-height:1.4;"><span style="color:#64748b;">&lt;!-- PHP-style inline Basil with MIDI control --&gt;</span>
+&lt;html&gt;&lt;body&gt;
+    &lt;h1&gt;Live Trigger&lt;/h1&gt;
+    <span style="color:#34d399;">&lt;?basil</span>
+        <span style="color:#64748b;">// MIDI-triggered audio sample playback</span>
+        <span style="color:#60a5fa;">DIM</span> midi@ = MIDI_OPEN_IN@(<span style="color:#fbbf24;">"Master Keyboard"</span>)
+        <span style="color:#60a5fa;">IF</span> MIDI_POLL%(midi@) &gt; 0
+            AUDIO_PLAY%(<span style="color:#fbbf24;">"System Audio"</span>, <span style="color:#fbbf24;">"alert.wav"</span>)
+            <span style="color:#60a5fa;">PRINT</span> <span style="color:#fbbf24;">"&lt;h3&gt;Triggering Chime!&lt;/h3&gt;"</span>
+        <span style="color:#60a5fa;">END IF</span>
+        MIDI_CLOSE%(midi@)
+    <span style="color:#34d399;">?&gt;</span>
+&lt;/body&gt;&lt;/html&gt;</pre>
+            <pre class="code-modern" style="margin:0; color:#cbd5e1; line-height:1.4; display:none;"><span style="color:#64748b;">&lt;!-- php-style inline basil with midi control --&gt;</span>
+&lt;html&gt;&lt;body&gt;
+    &lt;h1&gt;live trigger&lt;/h1&gt;
+    <span style="color:#34d399;">&lt;?basil</span>
+        <span style="color:#64748b;">// midi-triggered audio sample playback</span>
+        <span style="color:#60a5fa;">dim</span> midi@ = midi_open_in@(<span style="color:#fbbf24;">"master keyboard"</span>)
+        <span style="color:#60a5fa;">if</span> midi_poll%(midi@) &gt; 0 {
+            audio_play%(<span style="color:#fbbf24;">"system audio"</span>, <span style="color:#fbbf24;">"alert.wav"</span>)
+            <span style="color:#60a5fa;">print</span> <span style="color:#fbbf24;">"&lt;h3&gt;triggering chime!&lt;/h3&gt;"</span>
+        }
+        midi_close%(midi@)
+    <span style="color:#34d399;">?&gt;</span>
+&lt;/body&gt;&lt;/html&gt;</pre>
+        </div>
+    </div>
+
+    <div style="text-align:center; margin-top:2rem;">
+        <p style="font-size:0.9rem; opacity:0.6;">
+            All features are part of the Basil Standard Library and available via Cargo feature flags. 
+            <a href="/iobasic/BASIL_REFERENCE.md" style="color:#60a5fa; text-decoration:none;">View Full Reference →</a>
+        </p>
+    </div>
+
+    <script>
+    function setSyntax(mode) {
+        const classic = document.querySelectorAll('.code-classic');
+        const modern = document.querySelectorAll('.code-modern');
+        const btnC = document.getElementById('btn-classic');
+        const btnM = document.getElementById('btn-modern');
+        
+        if (mode === 'classic') {
+            classic.forEach(el => el.style.display = 'block');
+            modern.forEach(el => el.style.display = 'none');
+            btnC.style.background = 'rgba(96,165,250,0.1)';
+            btnC.style.borderColor = 'rgba(96,165,250,0.3)';
+            btnC.style.color = '#60a5fa';
+            btnM.style.background = 'transparent';
+            btnM.style.borderColor = 'rgba(255,255,255,0.1)';
+            btnM.style.color = 'rgba(255,255,255,0.5)';
+        } else {
+            classic.forEach(el => el.style.display = 'none');
+            modern.forEach(el => el.style.display = 'block');
+            btnM.style.background = 'rgba(96,165,250,0.1)';
+            btnM.style.borderColor = 'rgba(96,165,250,0.3)';
+            btnM.style.color = '#60a5fa';
+            btnC.style.background = 'transparent';
+            btnC.style.borderColor = 'rgba(255,255,255,0.1)';
+            btnC.style.color = 'rgba(255,255,255,0.5)';
+        }
+    }
+    </script>
+</section>
+
+
+<a id="basilica"></a>
+<section class="wrap" style="padding:4rem 1rem; background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); color: #f8fafc; border-radius: 12px; margin: 3rem auto; border: 1px solid rgba(96,165,250,0.2); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); position: relative; overflow: hidden;">
+    <div style="position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(96,165,250,0.1) 0%, transparent 70%); pointer-events: none;"></div>
+    
+    <div style="text-align:center; margin-bottom:2.5rem; position: relative; z-index: 1;">
+        <h2 style="font-size:clamp(2rem, 5vw, 3rem); color:#60a5fa; margin-bottom:0.75rem; text-shadow: 0 0 20px rgba(96,165,250,0.4);">🚀 BASILICA: THE NATIVE POWER-UP</h2>
+        <p style="max-width:850px; margin:0 auto; opacity:0.9; line-height:1.7; font-size:1.1rem;">
+            Take Basil beyond the terminal. Basilica is the professional native shell that bridges the gap 
+            between simple BASIC scripting and enterprise-grade desktop applications.
+        </p>
+    </div>
+
+    <div class="grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-bottom:3rem; position: relative; z-index: 1;">
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🖥️</div>
+            <h3 style="color:#fbbf24; margin-top:0;">Native Desktop Shell</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Build standalone <strong>Rust-powered</strong> desktop apps with embedded Basil VMs. Multi-window consoles, persistent system menus, and native dialogs.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Multiple Isolated VMs</li>
+                <li>Host APIs (Call native functions)</li>
+                <li>Self-Configuring System Menus</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🕸️</div>
+            <h3 style="color:#34d399; margin-top:0;">Hybrid Webview Apps</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Combine modern <strong>HTML5/JS</strong> frontends with <strong>Basil</strong> logic via bi-directional IPC for reactive, high-performance tools.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Dynamic DOM (WEB.SET_HTML$)</li>
+                <li>Direct JS Evaluation (WEB.EVAL$)</li>
+                <li>Handle JS events in Basil labels</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🎮</div>
+            <h3 style="color:#f87171; margin-top:0;">2D Game Engine</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">The <strong>obj-game</strong> mod makes 2D game dev dead-simple. Sprites, animations, and audio are hardware-accelerated and ready for action.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Pure Rust pixels/wgpu performance</li>
+                <li>Gamepad Support (Plug & Play)</li>
+                <li>WASM Ready: Export to the Web</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🏛️</div>
+            <h3 style="color:#818cf8; margin-top:0;">Enterprise MVC Engine</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Professional architecture for complex systems. Routing, templating, and model-layer persistence out of the box.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Scalable Model-View-Controller</li>
+                <li>Modern Template Engines</li>
+                <li>High Concurrency Pooled Ops</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🎹</div>
+            <h3 style="color:#a78bfa; margin-top:0;">Pro MIDI & Audio</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Build professional music tools. Capture live MIDI, drive hardware synths, and sequence complex arrangements with the <strong>obj-midi</strong> and <strong>obj-audio</strong> mods.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Real-time MIDI I/O</li>
+                <li>Low-latency Audio Engine</li>
+                <li>Hardware Synth Integration</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">📱</div>
+            <h3 style="color:#22d3ee; margin-top:0;">Mobile Runtime Player</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">The <strong>Basil Mobile Runtime Code Player</strong> lets you "play" apps like MP3s. Drag source or bytecode files directly to your phone and run them instantly.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Instant Side-loading</li>
+                <li>Universal Code Player</li>
+                <li>Zero-Install Deployment</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:3rem; align-items:center; background:rgba(0,0,0,0.25); padding:2.5rem; border-radius:12px; border:1px solid rgba(96,165,250,0.2); position: relative; z-index: 1;">
+        <div style="flex:1; min-width:300px; text-align: center;">
+            <img src="/starship_basilica_cartoon.png" alt="Starship Basilica Visual" style="width:100%; max-width:400px; border-radius:12px; box-shadow: 0 15px 40px rgba(0,0,0,0.6);">
+        </div>
+        <div style="flex:1.5; min-width:320px;">
+            <h4 style="margin-top:0; margin-bottom:1rem; color:#60a5fa; font-size:1.4rem;">Native Hybrid Power</h4>
+            <div style="background:#000; padding:1.5rem; border-radius:8px; font-family:monospace; font-size:0.9rem; color:#cbd5e1; line-height:1.5; border:1px solid #1e293b; overflow-x: auto;">
+                <div class="code-classic">
+                    <span style="color:#64748b;">' Drive a modern HTML GUI from Basil</span><br>
+                    <span style="color:#60a5fa;">WEB.SET_HTML$</span>(<span style="color:#fbbf24;">"&lt;button id='f'&gt;LAUNCH&lt;/button&gt;"</span>)<br>
+                    <span style="color:#60a5fa;">WEB.ON%</span>(<span style="color:#fbbf24;">"click"</span>, <span style="color:#fbbf24;">"f"</span>, OnLaunch)<br>
+                    <span style="color:#60a5fa;">STOP</span><br><br>
+                    <span style="color:#fbbf24;">OnLaunch:</span><br>
+                    &nbsp;&nbsp;<span style="color:#60a5fa;">WEB.EVAL$</span>(<span style="color:#fbbf24;">"alert('Launched!')"</span>)<br>
+                    &nbsp;&nbsp;<span style="color:#60a5fa;">RETURN</span>
+                </div>
+                <div class="code-modern" style="display:none;">
+                    <span style="color:#64748b;">// Drive a modern HTML GUI from Basil</span><br>
+                    <span style="color:#60a5fa;">web.set_html$</span>(<span style="color:#fbbf24;">"&lt;button id='f'&gt;LAUNCH&lt;/button&gt;"</span>);<br>
+                    <span style="color:#60a5fa;">web.on%</span>(<span style="color:#fbbf24;">"click"</span>, <span style="color:#fbbf24;">"f"</span>, OnLaunch);<br>
+                    <span style="color:#60a5fa;">stop</span>;<br><br>
+                    <span style="color:#fbbf24;">OnLaunch:</span> {<br>
+                    &nbsp;&nbsp;<span style="color:#60a5fa;">web.eval$</span>(<span style="color:#fbbf24;">"alert('Launched!')"</span>);<br>
+                    &nbsp;&nbsp;<span style="color:#60a5fa;">return</span>;<br>
+                    }
+                </div>
+            </div>
+            <p style="margin-top:2rem; font-size:1rem; opacity:0.8; line-height:1.6;">
+                Basilica transforms Basil into a formidable platform for professional application development, 
+                leveraging Rust's performance and memory safety.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<a id="bloom"></a>
+<section class="wrap" style="padding:4rem 1rem; background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%); color: #ecfdf5; border-radius: 12px; margin: 3rem auto; border: 1px solid rgba(16,185,129,0.2); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); position: relative; overflow: hidden;">
+    <div style="position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, transparent 70%); pointer-events: none;"></div>
+    
+    <div style="text-align:center; margin-bottom:2.5rem; position: relative; z-index: 1;">
+        <h2 style="font-size:clamp(2rem, 5vw, 3rem); color:#10b981; margin-bottom:0.75rem; text-shadow: 0 0 20px rgba(16,185,129,0.4);">🌸 BLOOM: THE MODERN UI ENGINE</h2>
+        <p style="max-width:850px; margin:0 auto; opacity:0.9; line-height:1.7; font-size:1.1rem;">
+            The next generation of the 🌱Basil/💎Syndorela ecosystem. Bloom is a high-performance replacement
+            for legacy JavaScript frameworks, designed to modernize your legacy applications into reactive, web-native technology.
+        </p>
+    </div>
+
+    <div class="grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-bottom:3rem; position: relative; z-index: 1;">
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🔄</div>
+            <h3 style="color:#fbbf24; margin-top:0;">Legacy Bridge</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Convert legacy 🌱Basil/💎Syndorela codebases into a clean, intermediate UI model that's easy to read and manipulate.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Generic UI Abstraction</li>
+                <li>Import Legacy GUI Code</li>
+                <li>Automated Component Synthesis</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">⚡</div>
+            <h3 style="color:#34d399; margin-top:0;">Live Review & Edit</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Review, edit, and debug your interfaces in real-time. Tweak layouts and logic on the fly without recompiling.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Hot-Reloading Everywhere</li>
+                <li>Real-Time State Inspection</li>
+                <li>Visual Layout Tweaker</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">📦</div>
+            <h3 style="color:#60a5fa; margin-top:0;">Polyglot Export</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Build once, export anywhere. Seamlessly generate production-ready code for React, Vue, or Angular with a single click.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>React JSX/TSX Support</li>
+                <li>Enterprise Angular Outputs</li>
+                <li>Modern Vue 3 Composition</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🌿</div>
+            <h3 style="color:#fb7185; margin-top:0;">Standalone Power</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Bloom is great by itself. Use the native reactive engine to build incredibly fast, dependency-free web applications.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Zero-Fat Runtime</li>
+                <li>Direct Basil VM Hooks</li>
+                <li>Ultra-Lightweight Engine</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🔍</div>
+            <h3 style="color:#a78bfa; margin-top:0;">Visual Debugger</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Professional-grade visual suite to track state changes and hunt down bugs across your entire UI tree.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Time-Travel Debugging</li>
+                <li>State Diff Visualization</li>
+                <li>Logic Flow Tracing</li>
+            </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.02); padding:1.5rem; border-radius:12px; border:1px solid rgba(255,255,255,0.05);">
+            <div style="font-size: 2.2rem; margin-bottom: 0.75rem;">🏰</div>
+            <h3 style="color:#22d3ee; margin-top:0;">Enterprise Ready</h3>
+            <p style="font-size:0.9rem; margin-bottom:0.75rem; opacity:0.85;">Built for massive systems. Bloom handles thousands of components with ease, keeping your app responsive and secure.</p>
+            <ul style="font-size:0.8rem; padding-left:1.2rem; opacity:0.75; line-height:1.5;">
+                <li>Scalable UI Architecture</li>
+                <li>Secure Data Binding</li>
+                <li>Unified Design System</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:3rem; align-items:center; background:rgba(0,0,0,0.25); padding:2.5rem; border-radius:12px; border:1px solid rgba(16,185,129,0.2); position: relative; z-index: 1;">
+        <div style="flex:1; min-width:300px; text-align: center;">
+            <img src="/starshipbasilica_2.jpg" alt="Bloom UI Visualization" style="width:100%; max-width:400px; border-radius:12px; box-shadow: 0 15px 40px rgba(0,0,0,0.6); filter: hue-rotate(260deg);">
+        </div>
+        <div style="flex:1.5; min-width:320px;">
+            <h4 style="margin-top:0; margin-bottom:1rem; color:#10b981; font-size:1.4rem;">Universal UI Modernization</h4>
+            <div style="background:#000; padding:1.5rem; border-radius:8px; font-family:monospace; font-size:0.9rem; color:#cbd5e1; line-height:1.5; border:1px solid #1e293b; overflow-x: auto;">
+                <div class="code-classic">
+                    <span style="color:#64748b;">' Modernize legacy Basil UI systems</span><br>
+                    <span style="color:#10b981;">UI% = BLOOM.IMPORT_LEGACY</span>(<span style="color:#fbbf24;">"old_system.bas"</span>)<br>
+                    <span style="color:#10b981;">BLOOM.EDIT_LIVE</span>(UI%)<br><br>
+                    <span style="color:#64748b;">' Export to modern React stack</span><br>
+                    <span style="color:#10b981;">BLOOM.EXPORT</span>(UI%, <span style="color:#fbbf24;">"REACT"</span>, <span style="color:#fbbf24;">"./src/ui"</span>)<br>
+                    <span style="color:#10b981;">STOP</span>
+                </div>
+                <div class="code-modern" style="display:none;">
+                    <span style="color:#64748b;">// Modernize legacy Basil UI systems</span><br>
+                    <span style="color:#10b981;">ui = bloom.import_legacy</span>(<span style="color:#fbbf24;">"old_system.bas"</span>);<br>
+                    <span style="color:#10b981;">bloom.edit_live</span>(ui);<br><br>
+                    <span style="color:#64748b;">// Export to modern React stack</span><br>
+                    <span style="color:#10b981;">bloom.export</span>(ui, <span style="color:#fbbf24;">"react"</span>, <span style="color:#fbbf24;">"./src/ui"</span>);<br>
+                    <span style="color:#10b981;">stop</span>;
+                </div>
+            </div>
+            <p style="margin-top:2rem; font-size:1rem; opacity:0.8; line-height:1.6;">
+                Bloom is the catalyst for your digital transformation, taking legacy Basil applications and propelling them into the future of reactive, web-native technology.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<a id="basilisk"></a>
+<!-- #basilisk or BASILISK.COM, the Legendary Dragon -->
+<!-- https://basilbasic.com/#basilisk -->
+
+
+
+
+
+<!-- 💎Syndorela Banner -->
+
+<section class="wrap" style="padding:2rem 1rem 1.5rem 1rem">
+    <script src="https://syndorela.com/embed/syndorela-banner.js"></script>
+    <syndorela-banner top-notice="1" notice-duration="15"></syndorela-banner>
+</section>
+
+<!-- Footer links -->
+<footer class="foot">
+    <div class="wrap" style="padding:1.25rem 1rem 2.5rem 1rem">
+        <h3 style="margin:.25rem 0 1rem 0">Links</h3>
+        <ul style="margin:0;padding-left:1.1rem">
+            <li><a href="https://github.com/blackrushllc" target="_blank" rel="noopener">GitHub —
+                blackrushllc</a></li>
+            <li><a href="https://www.facebook.com/BlackrushBASIC" target="_blank" rel="noopener">Facebook —
+                BlackrushBASIC</a></li>
+            <li><a href="https://uibasic.com/reference.html" target="_blank" rel="noopener">Basil Reference</a>
+            </li>
+            <li><a href="https://uibasic.com/website/index.basil" target="_blank" rel="noopener"> A simple Basil
+                CGI web app with login, register, user home, logout</a></li>
+            <li><a href="https://join.slack.com/t/blackrushworkspace/shared_invite/zt-3g33s1rxc-9wWmCfggBEzInblqjzsn1A"
+                   target="_blank" rel="noopener">Join our Slack channel</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Optional: tiny hero tagline rotator (jQuery) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        crossorigin="anonymous"></script>
+<script>
+    (function () {
+        var lines = [
+            "Fast, friendly, and ready for the real world.",
+            "A cozy BASIC with modern superpowers.",
+            "Compile to Native Binary or Interpret from Source",
+            "Made for learning. Built for shipping.",
+            "What first year students should learn.",
+            "What hobbyists should learn.",
+            "What professionals should learn.",
+            "Designed from the ground up for the AI age.",
+
+        ];
+        var i = 0, $tag = $("#tagline");
+
+        function swap() {
+            var next = lines[i = (i + 1) % lines.length];
+            $tag.fadeOut(350, function () {
+                $tag.text(next).fadeIn(350);
+            });
+        }
+
+        setInterval(swap, 2600);
+
+        var $hero = $("#hero");
+
+        // Image list (first one matches the initial background in CSS)
+        var images = [
+            "starshipbasilica_1.jpg",
+            "starshipbasilica_2.jpg",
+            "starshipbasilica_3.jpg",
+            "starshipbasilica_1.jpg",
+            "starshipbasilica_2.jpg",
+            "starshipbasilica_3.jpg",
+            "starshipbasilica_1.jpg",
+            "starshipbasilica_2.jpg",
+            "starshipbasilica_3.jpg",
+            "starshipbasilica_1.jpg",
+            "starshipbasilica_2.jpg",
+            "starshipbasilica_3.jpg"
+        ];
+        var currentIndex = 0;
+
+        // Ensure a hidden preload container exists, then preload images into hidden divs
+        var $preload = $("#bg-preload");
+        if ($preload.length === 0) {
+            $preload = $('<div id="bg-preload" aria-hidden="true" style="display:none"></div>').appendTo('body');
+        }
+        $.each(images, function (_, img) {
+            $('<div class="bg-preload-item"></div>')
+                .css('background-image', "url('/" + img + "')")
+                .appendTo($preload);
+        });
+
+        // Create a dedicated fade layer that sits above #hero's background but below content
+        var $fadeLayer = $('<div class="hero-fade-layer" aria-hidden="true"></div>').css({
+            position: 'absolute',
+            inset: 0,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'contrast(105%) brightness(85%)',
+            display: 'none',
+            opacity: 0
+        });
+        $fadeLayer.insertAfter($hero);
+
+        function buildBg(img) {
+            // Keep the nice gradient overlays while swapping the image underneath
+            return "radial-gradient(1200px 600px at 10% 10%, rgba(40,103,198,.45), transparent 50%)," +
+                "radial-gradient(900px 450px at 90% 20%, rgba(255,255,255,.06), transparent 60%)," +
+                "url('/" + img + "')";
+        }
+
+        function swapBackgroundImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            var nextImg = images[currentIndex];
+            var bg = buildBg(nextImg);
+
+            // Crossfade: fade in overlay with next image, then commit to #hero and fade it back out
+            $fadeLayer.stop(true, true)
+                .css('background-image', bg)
+                .show()
+                .animate({opacity: 1}, 1800, function () {
+                    $hero.css('background-image', bg);
+                    $fadeLayer.fadeOut(1800, function () {
+                        $fadeLayer.css('opacity', 0).hide();
+                    });
+                });
+        }
+
+        setInterval(swapBackgroundImage, 8000);
+
+
+    })();
+
+    // Domain specific redirection to anchors
+    (function () {
+        var host = window.location.hostname.toLowerCase();
+        if (host !== 'basilbasic.com' && host !== 'www.basilbasic.com') {
+            if (host.indexOf('iobasic.com') !== -1) {
+                window.location.hash = 'iobasic';
+            } else if (host.indexOf('basilica.com') !== -1) {
+                window.location.hash = 'basilica';
+            } else if (host.indexOf('bloom.com') !== -1) {
+                window.location.hash = 'bloom';
+            } else if (host.indexOf('baselisk.com') !== -1) {
+                window.location.hash = 'baselisk';
+            }
+        }
+    })();
+</script>
+
+<!-- Optional: a touch of polish that reuses your tokens -->
+<style>
+    .hero .btn {
+        box-shadow: 0 6px 20px rgba(40, 103, 198, .25);
+    }
+
+    .hero .btn.secondary {
+        background: rgba(255, 255, 255, .12);
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .hero .btn.secondary:hover {
+        background: rgba(255, 255, 255, .2);
+    }
+
+    .intro {
+        margin-top: .6rem;
+    }
+
+    .grid .card p {
+        margin: .4rem 0 .2rem 0;
+    }
+
+    .top a {
+        text-decoration: none;
+    }
+
+    .top a:hover {
+        text-decoration: underline;
+    }
+
+    .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .thing ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0.25rem; /* indent whole list */
+    }
+
+    .thing li {
+        list-style: none;
+        /*margin: .35rem 0;*/
+        /*padding-left: .0rem;*/
+        color: #333;
+        line-height: 1.35;
+    }
+
+    .thing li + li {
+        list-style: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.04);
+        padding-top: .5rem;
+        margin-top: .5rem;
+    }
+
+    /* Float helpers for media with text wrapping */
+    .float-media {
+        width: 360px; /* tweak as you like */
+        max-width: 42%;
+        margin: .3rem 1rem .9rem;
+    }
+
+    .float-left {
+        float: left;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    /* Ensure the container clears the floats so later sections/footers don’t overlap */
+    .flow-wrap::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /* Optional: nudge the second video down a bit */
+    .stagger {
+        margin-top: 1.25rem;
+    }
+
+    /* Mobile: stack the videos above text for readability */
+    @media (max-width: 900px) {
+        .float-media {
+            float: none;
+            display: block;
+            max-width: 100%;
+            margin: 1rem 0;
+        }
+    }
+</style>
+<div id="bg-preload" aria-hidden="true" style="display:none"></div>
+<!--<script src="assets/reference.js"></script>-->
+</body>
+</html>
